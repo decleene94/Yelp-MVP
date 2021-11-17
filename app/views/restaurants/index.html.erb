@@ -1,0 +1,8 @@
+<ul>
+  <% @restaurants.each do |rest| %>
+    <li><%= link_to rest.name, task_path(rest) %></li>
+  <% end %>
+</ul>
+<%# <form method="get" action="/tasks/new">
+    <button type="submit">Add Task</button>
+</form> %>
